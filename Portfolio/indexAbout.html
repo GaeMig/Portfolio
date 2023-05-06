@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abaut Gae_Mig</title>
+    <link rel="shortcut icon" href="assets/img/favi.png"/>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="assets/aboutStyle.css">
+</head>
+<body>
+    
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark  ">
+      <div class="container-fluid">
+        <a class="navbar-brand logo" href="index.html">M G</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav  ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link active" href="indexAbout.html">About</a>
+            </li>
+
+          
+          <li class="nav-item">
+              <a class="nav-link active" href="indexContact.html">Contacts</a>
+            </li>
+          </li>
+          </ul>
+         
+        </div>
+      </div>
+    </nav>
+  </header>
+
+<main>
+
+<h2 id="titolo-abaut" class="title">About me </h2>
+
+<div class="grid-container">
+  <div class="descrizione-grid">
+    <div class="grid-item  item-1">
+
+<p class="descrizioneLunga">
+<span class="frase">My brief description</span> 
+<br>
+<br>
+Hello, my name is Gaetano Migliucci, born in 1990 in Caserta, <br>
+in these last 2 years I live between my city of birth and Florence. <br>
+I like to create things through codes, <br>
+My interest in web development started in 2016, 
+starting to create logos for businesses,from there to front end development.
+
+Lover of nature, music and art.
+</p>
+    </div>
+
+    <div class="grid-item item-2">
+       <img class="myFoto" src="assets/img/MyFoto.jpg" alt="foto">
+    </div>
+    
+    <div class="grid-item item-3">
+     <h4 class="hardSkills">Hard Skills</h4>
+
+     <span id="html">HTML</span> 
+     <div class="sfondoLoading">
+     <div class="line"></div>
+    </div>
+     
+
+    <span id="css">CSS</span>
+    <div class="sfondoLoading">
+    <div class="line1"></div>
+    </div>
+
+    <span id="js">JS</span>
+    <div class="sfondoLoading">
+      <div class="line2"></div>
+    </div>
+    
+    <h6 class="other">Other</h6>
+    <span class="otherSkills">Sass / Bootstrap / Git</span>
+  </div>
+
+<div class="grid-item item-4">
+   <h4 class="softSkills">Soft Skills</h4>
+   <p class="otherSkills">Strategy / Problem Resolving / Collaboration / Teamworker</p>
+      
+  <div class="link">
+    <a class="goTo" href="indexContact.html">
+      Go to contacts
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-arrow-right-circle-fill arrow" viewBox="0 0 16 16">
+        <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+      </svg>
+    </a>
+  </div>
+
+</div>
+
+
+  
+
+  </div>
+
+</div>
+
+</main>
+
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+
+<script>
+  var abautMe = ['About me' , 'My Skills' , 'My Skills'];
+  var counter= 0;
+  var abaut = document.getElementById("titolo-abaut");
+  setInterval(update_titolo_abaut, 5000);
+  function update_titolo_abaut(){
+  abaut.innerHTML = abautMe[counter];
+  counter++;
+  if(counter >= abautMe.length){
+    counter = 0;
+  }
+  }
+</script>
+</body>
+</html>
